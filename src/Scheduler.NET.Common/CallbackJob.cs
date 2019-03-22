@@ -11,9 +11,12 @@ namespace Scheduler.NET.Common
 		[Url]
 		public string Url { get; set; }
 
-		public HttpMethod Method { get; set; }
+        public HttpMethod Method { get; set; }//= HttpMethod.Get;
 
-		public override string ToString()
+        public string MethodString { get { return this.Method?.Method; }}
+
+
+        public override string ToString()
 		{
 			return JsonConvert.SerializeObject(this);
 		}

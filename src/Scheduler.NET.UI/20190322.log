@@ -2065,3 +2065,379 @@ Scheduler.NET.Common.SchedulerNetException: No client connected.
 2019-03-22 23:03:21.027 +08:00 [Information] [0.0.0.1, nwaP8QUFInmuZ2f0wcrlmg] trigger job 'fdda990b42b647819538adf95e36ed8f', batch 'd7e6d6d0afa64e5bba9d6a51792755d3', group 'Test'.
 2019-03-22 23:03:21.076 +08:00 [Information] [0.0.0.1, nwaP8QUFInmuZ2f0wcrlmg] trigger job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'cbf86f622def44bba0eae63535e053c2', group 'Test'.
 2019-03-22 23:03:21.165 +08:00 [Information] [0.0.0.1, N-shDt8Gbbgr7-v6cstFxg] disconnected.
+2019-03-22 23:13:07.023 +08:00 [Information] Welcome to Scheduler.Net!
+2019-03-22 23:13:08.186 +08:00 [Information] Start installing Hangfire SQL objects...
+2019-03-22 23:13:08.326 +08:00 [Information] Hangfire SQL objects installed.
+2019-03-22 23:13:08.696 +08:00 [Information] Starting Hangfire Server
+2019-03-22 23:13:08.705 +08:00 [Information] Using job storage: 'SQL Server: .\SQL2016DEV@Scheduler_NET'
+2019-03-22 23:13:08.705 +08:00 [Information] Using the following options for SQL Server job storage:
+2019-03-22 23:13:08.705 +08:00 [Information]     Queue poll interval: 00:00:15.
+2019-03-22 23:13:08.705 +08:00 [Information] Using the following options for Hangfire Server:
+2019-03-22 23:13:08.706 +08:00 [Information]     Worker count: 20
+2019-03-22 23:13:08.707 +08:00 [Information]     Listening queues: 'default'
+2019-03-22 23:13:08.707 +08:00 [Information]     Shutdown timeout: 00:00:15
+2019-03-22 23:13:08.707 +08:00 [Information]     Schedule polling interval: 00:00:15
+2019-03-22 23:13:09.539 +08:00 [Warning] Failed to process the job '15': an exception occurred. Retry attempt 1 of 10 will be performed in 00:00:36.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:13:09.551 +08:00 [Warning] Failed to process the job '16': an exception occurred. Retry attempt 1 of 10 will be performed in 00:00:22.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:13:09.626 +08:00 [Warning] Failed to process the job '14': an exception occurred. Retry attempt 1 of 10 will be performed in 00:00:28.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:13:10.171 +08:00 [Information] Create {"Id":"ce27a8282d9b4206bfc8f73578e27f27","Group":"Test","Name":"Sample.ConsoleJobProcessor","Cron":"*/1 * * * *","Content":"aaa"}.
+2019-03-22 23:13:39.936 +08:00 [Information] 2 scheduled job(s) enqueued.
+2019-03-22 23:13:39.943 +08:00 [Warning] Failed to process the job '16': an exception occurred. Retry attempt 2 of 10 will be performed in 00:00:20.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:13:39.962 +08:00 [Warning] Failed to process the job '14': an exception occurred. Retry attempt 2 of 10 will be performed in 00:00:38.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:13:54.967 +08:00 [Information] 1 scheduled job(s) enqueued.
+2019-03-22 23:13:55.007 +08:00 [Warning] Failed to process the job '15': an exception occurred. Retry attempt 2 of 10 will be performed in 00:01:10.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:14:01.115 +08:00 [Warning] Failed to process the job '17': an exception occurred. Retry attempt 1 of 10 will be performed in 00:00:37.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:14:01.211 +08:00 [Warning] Failed to process the job '18': an exception occurred. Retry attempt 1 of 10 will be performed in 00:00:37.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:14:01.247 +08:00 [Warning] Failed to process the job '19': an exception occurred. Retry attempt 1 of 10 will be performed in 00:00:29.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:14:01.260 +08:00 [Warning] Failed to process the job '20': an exception occurred. Retry attempt 1 of 10 will be performed in 00:00:30.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:14:05.241 +08:00 [Information] [0.0.0.1, IRInZel5NUqwVICqOeRNkg] connected.
+2019-03-22 23:14:07.324 +08:00 [Information] [0.0.0.1, IRInZel5NUqwVICqOeRNkg] watched ["Sample.ConsoleJobProcessor"] success.
+2019-03-22 23:14:07.667 +08:00 [Information] [0.0.0.1, xru_fET2XFf9KOIb-d3gQA] connected.
+2019-03-22 23:14:07.685 +08:00 [Information] [0.0.0.1, xru_fET2XFf9KOIb-d3gQA] watched ["Sample.ConsoleJobProcessor"] success.
+2019-03-22 23:14:07.991 +08:00 [Information] [0.0.0.1, IiJ3rX924DFvsr9mfC-YQQ] connected.
+2019-03-22 23:14:07.997 +08:00 [Information] [0.0.0.1, IiJ3rX924DFvsr9mfC-YQQ] watched ["Sample.ConsoleJobProcessor"] success.
+2019-03-22 23:14:08.311 +08:00 [Information] [0.0.0.1, CfCCNO1XzO1wTT29piOXaA] connected.
+2019-03-22 23:14:08.323 +08:00 [Information] [0.0.0.1, CfCCNO1XzO1wTT29piOXaA] watched ["Sample.ConsoleJobProcessor"] success.
+2019-03-22 23:14:08.520 +08:00 [Information] [0.0.0.1, 0UE4OetAou4EM4-phtuV9w] connected.
+2019-03-22 23:14:08.526 +08:00 [Information] [0.0.0.1, 0UE4OetAou4EM4-phtuV9w] watched ["Sample.ConsoleJobProcessor"] success.
+2019-03-22 23:14:08.881 +08:00 [Information] [0.0.0.1, lTvZUb9hMR8smgbvD-XIrQ] connected.
+2019-03-22 23:14:08.946 +08:00 [Information] [0.0.0.1, lTvZUb9hMR8smgbvD-XIrQ] watched ["Sample.ConsoleJobProcessor"] success.
+2019-03-22 23:14:09.050 +08:00 [Information] [0.0.0.1, 3RLKJzzU8YZXhnFP9v4GXw] connected.
+2019-03-22 23:14:09.053 +08:00 [Information] [0.0.0.1, 3RLKJzzU8YZXhnFP9v4GXw] watched ["Sample.ConsoleJobProcessor"] success.
+2019-03-22 23:14:09.158 +08:00 [Information] [0.0.0.1, c-7Lz3X-FHmCLTMitJDQxw] connected.
+2019-03-22 23:14:09.164 +08:00 [Information] [0.0.0.1, c-7Lz3X-FHmCLTMitJDQxw] watched ["Sample.ConsoleJobProcessor"] success.
+2019-03-22 23:14:09.276 +08:00 [Information] [0.0.0.1, tRvCn3Od0sbf6nfh-4PLTw] connected.
+2019-03-22 23:14:09.281 +08:00 [Information] [0.0.0.1, tRvCn3Od0sbf6nfh-4PLTw] watched ["Sample.ConsoleJobProcessor"] success.
+2019-03-22 23:14:09.469 +08:00 [Information] [0.0.0.1, dbP4U3NGXHSh43GRZBOwVg] connected.
+2019-03-22 23:14:09.483 +08:00 [Information] [0.0.0.1, dbP4U3NGXHSh43GRZBOwVg] watched ["Sample.ConsoleJobProcessor"] success.
+2019-03-22 23:14:09.608 +08:00 [Information] [0.0.0.1, 8ZbUTUNa05hTxt89LyhnOw] connected.
+2019-03-22 23:14:09.619 +08:00 [Information] [0.0.0.1, 8ZbUTUNa05hTxt89LyhnOw] watched ["Sample.ConsoleJobProcessor"] success.
+2019-03-22 23:14:09.797 +08:00 [Information] [0.0.0.1, -XgXDyfY9_3NDj5fi6bjkA] connected.
+2019-03-22 23:14:09.805 +08:00 [Information] [0.0.0.1, -XgXDyfY9_3NDj5fi6bjkA] watched ["Sample.ConsoleJobProcessor"] success.
+2019-03-22 23:14:10.025 +08:00 [Information] 1 scheduled job(s) enqueued.
+2019-03-22 23:14:10.037 +08:00 [Information] [0.0.0.1, IRInZel5NUqwVICqOeRNkg] trigger job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', group 'Test'.
+2019-03-22 23:14:10.052 +08:00 [Information] [0.0.0.1, xru_fET2XFf9KOIb-d3gQA] trigger job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', group 'Test'.
+2019-03-22 23:14:10.065 +08:00 [Information] [0.0.0.1, IiJ3rX924DFvsr9mfC-YQQ] trigger job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', group 'Test'.
+2019-03-22 23:14:10.077 +08:00 [Information] [0.0.0.1, CfCCNO1XzO1wTT29piOXaA] trigger job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', group 'Test'.
+2019-03-22 23:14:10.089 +08:00 [Information] [0.0.0.1, 0UE4OetAou4EM4-phtuV9w] trigger job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', group 'Test'.
+2019-03-22 23:14:10.092 +08:00 [Information] [0.0.0.1, CvtBKWZPvSf-MWReCtye-w] connected.
+2019-03-22 23:14:10.101 +08:00 [Information] [0.0.0.1, lTvZUb9hMR8smgbvD-XIrQ] trigger job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', group 'Test'.
+2019-03-22 23:14:10.113 +08:00 [Information] [0.0.0.1, 3RLKJzzU8YZXhnFP9v4GXw] trigger job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', group 'Test'.
+2019-03-22 23:14:10.124 +08:00 [Information] [0.0.0.1, c-7Lz3X-FHmCLTMitJDQxw] trigger job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', group 'Test'.
+2019-03-22 23:14:10.136 +08:00 [Information] [0.0.0.1, tRvCn3Od0sbf6nfh-4PLTw] trigger job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', group 'Test'.
+2019-03-22 23:14:10.147 +08:00 [Information] [0.0.0.1, dbP4U3NGXHSh43GRZBOwVg] trigger job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', group 'Test'.
+2019-03-22 23:14:10.158 +08:00 [Information] [0.0.0.1, 8ZbUTUNa05hTxt89LyhnOw] trigger job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', group 'Test'.
+2019-03-22 23:14:10.170 +08:00 [Information] [0.0.0.1, -XgXDyfY9_3NDj5fi6bjkA] trigger job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', group 'Test'.
+2019-03-22 23:14:17.334 +08:00 [Information] [0.0.0.1, xru_fET2XFf9KOIb-d3gQA] notice job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', status 'running'.
+2019-03-22 23:14:17.335 +08:00 [Information] [0.0.0.1, IRInZel5NUqwVICqOeRNkg] notice job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', status 'running'.
+2019-03-22 23:14:17.340 +08:00 [Information] [0.0.0.1, CfCCNO1XzO1wTT29piOXaA] notice job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', status 'running'.
+2019-03-22 23:14:17.358 +08:00 [Information] [0.0.0.1, IiJ3rX924DFvsr9mfC-YQQ] notice job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', status 'running'.
+2019-03-22 23:14:19.304 +08:00 [Information] [0.0.0.1, CvtBKWZPvSf-MWReCtye-w] watched ["Sample.ConsoleJobProcessor"] success.
+2019-03-22 23:14:19.304 +08:00 [Information] [0.0.0.1, tRvCn3Od0sbf6nfh-4PLTw] notice job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', status 'running'.
+2019-03-22 23:14:19.304 +08:00 [Information] [0.0.0.1, 0UE4OetAou4EM4-phtuV9w] notice job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', status 'running'.
+2019-03-22 23:14:19.306 +08:00 [Information] [0.0.0.1, dbP4U3NGXHSh43GRZBOwVg] notice job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', status 'running'.
+2019-03-22 23:14:19.310 +08:00 [Information] [0.0.0.1, lTvZUb9hMR8smgbvD-XIrQ] notice job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', status 'running'.
+2019-03-22 23:14:19.311 +08:00 [Information] [0.0.0.1, 8ZbUTUNa05hTxt89LyhnOw] notice job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', status 'running'.
+2019-03-22 23:14:19.311 +08:00 [Information] [0.0.0.1, 3RLKJzzU8YZXhnFP9v4GXw] notice job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', status 'running'.
+2019-03-22 23:14:19.312 +08:00 [Information] [0.0.0.1, -XgXDyfY9_3NDj5fi6bjkA] notice job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', status 'running'.
+2019-03-22 23:14:19.316 +08:00 [Information] [0.0.0.1, c-7Lz3X-FHmCLTMitJDQxw] notice job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', status 'running'.
+2019-03-22 23:14:19.469 +08:00 [Information] [0.0.0.1, IRInZel5NUqwVICqOeRNkg] notice job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', status 'success'.
+2019-03-22 23:14:19.585 +08:00 [Information] [0.0.0.1, IiJ3rX924DFvsr9mfC-YQQ] notice job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', status 'success'.
+2019-03-22 23:14:19.585 +08:00 [Information] [0.0.0.1, -XgXDyfY9_3NDj5fi6bjkA] notice job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', status 'success'.
+2019-03-22 23:14:19.586 +08:00 [Information] [0.0.0.1, 8ZbUTUNa05hTxt89LyhnOw] notice job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', status 'success'.
+2019-03-22 23:14:19.596 +08:00 [Information] [0.0.0.1, c-7Lz3X-FHmCLTMitJDQxw] notice job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', status 'success'.
+2019-03-22 23:14:19.598 +08:00 [Information] [0.0.0.1, 3RLKJzzU8YZXhnFP9v4GXw] notice job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', status 'success'.
+2019-03-22 23:14:19.598 +08:00 [Information] [0.0.0.1, CfCCNO1XzO1wTT29piOXaA] notice job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', status 'success'.
+2019-03-22 23:14:19.599 +08:00 [Information] [0.0.0.1, xru_fET2XFf9KOIb-d3gQA] notice job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', status 'success'.
+2019-03-22 23:14:19.599 +08:00 [Information] [0.0.0.1, lTvZUb9hMR8smgbvD-XIrQ] notice job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', status 'success'.
+2019-03-22 23:14:19.599 +08:00 [Information] [0.0.0.1, dbP4U3NGXHSh43GRZBOwVg] notice job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', status 'success'.
+2019-03-22 23:14:19.600 +08:00 [Information] [0.0.0.1, tRvCn3Od0sbf6nfh-4PLTw] notice job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', status 'success'.
+2019-03-22 23:14:19.600 +08:00 [Information] [0.0.0.1, 0UE4OetAou4EM4-phtuV9w] notice job '95c02e617ee84b2ba63eeb1862dec3e8', batch 'f30d523432944b4c8718bd1ab4e5f2cc', status 'success'.
+2019-03-22 23:14:19.728 +08:00 [Information] [0.0.0.1, B0S1_wl8EPyRWDf4cnB9CQ] connected.
+2019-03-22 23:14:19.738 +08:00 [Information] [0.0.0.1, B0S1_wl8EPyRWDf4cnB9CQ] watched ["Sample.ConsoleJobProcessor"] success.
+2019-03-22 23:14:20.005 +08:00 [Information] [0.0.0.1, RDK7L-FFYXjbKQeJkHXWtQ] connected.
+2019-03-22 23:14:20.009 +08:00 [Information] [0.0.0.1, RDK7L-FFYXjbKQeJkHXWtQ] watched ["Sample.ConsoleJobProcessor"] success.
+2019-03-22 23:14:20.208 +08:00 [Information] [0.0.0.1, qHboZx-ewKCcz8hZO8vbOw] connected.
+2019-03-22 23:14:20.219 +08:00 [Information] [0.0.0.1, qHboZx-ewKCcz8hZO8vbOw] watched ["Sample.ConsoleJobProcessor"] success.
+2019-03-22 23:14:21.163 +08:00 [Information] [0.0.0.1, YBrR5mk-7gzs9N4Qvcv4Tg] connected.
+2019-03-22 23:14:46.270 +08:00 [Information] Welcome to Scheduler.Net!
+2019-03-22 23:15:23.280 +08:00 [Information] Start installing Hangfire SQL objects...
+2019-03-22 23:15:27.013 +08:00 [Information] Hangfire SQL objects installed.
+2019-03-22 23:15:31.598 +08:00 [Information] Starting Hangfire Server
+2019-03-22 23:15:31.865 +08:00 [Information] Using job storage: 'SQL Server: .\SQL2016DEV@Scheduler_NET'
+2019-03-22 23:15:31.866 +08:00 [Information] Using the following options for SQL Server job storage:
+2019-03-22 23:15:31.866 +08:00 [Information]     Queue poll interval: 00:00:15.
+2019-03-22 23:15:31.866 +08:00 [Information] Using the following options for Hangfire Server:
+2019-03-22 23:15:31.866 +08:00 [Information]     Worker count: 20
+2019-03-22 23:15:31.868 +08:00 [Information]     Listening queues: 'default'
+2019-03-22 23:15:31.869 +08:00 [Information]     Shutdown timeout: 00:00:15
+2019-03-22 23:15:31.869 +08:00 [Information]     Schedule polling interval: 00:00:15
+2019-03-22 23:17:29.418 +08:00 [Warning] Failed to process the job '14': an exception occurred. Retry attempt 3 of 10 will be performed in 00:00:37.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:17:41.307 +08:00 [Warning] Failed to process the job '19': an exception occurred. Retry attempt 2 of 10 will be performed in 00:00:52.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:17:42.696 +08:00 [Warning] Failed to process the job '21': an exception occurred. Retry attempt 1 of 10 will be performed in 00:00:18.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:17:41.307 +08:00 [Warning] Failed to process the job '20': an exception occurred. Retry attempt 2 of 10 will be performed in 00:00:30.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:17:56.278 +08:00 [Warning] Failed to process the job '22': an exception occurred. Retry attempt 1 of 10 will be performed in 00:00:21.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:17:59.928 +08:00 [Warning] Failed to process the job '17': an exception occurred. Retry attempt 2 of 10 will be performed in 00:00:44.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:18:00.392 +08:00 [Warning] Failed to process the job '23': an exception occurred. Retry attempt 1 of 10 will be performed in 00:00:18.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:18:00.682 +08:00 [Warning] Failed to process the job '18': an exception occurred. Retry attempt 2 of 10 will be performed in 00:00:16.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:18:08.550 +08:00 [Warning] Failed to process the job '24': an exception occurred. Retry attempt 1 of 10 will be performed in 00:00:20.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:18:29.428 +08:00 [Warning] Failed to process the job '15': an exception occurred. Retry attempt 3 of 10 will be performed in 00:01:07.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:18:44.149 +08:00 [Warning] Failed to process the job '21': an exception occurred. Retry attempt 2 of 10 will be performed in 00:00:36.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:18:54.907 +08:00 [Warning] Failed to process the job '14': an exception occurred. Retry attempt 4 of 10 will be performed in 00:03:20.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:19:04.249 +08:00 [Warning] Failed to process the job '20': an exception occurred. Retry attempt 3 of 10 will be performed in 00:01:22.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:19:21.334 +08:00 [Warning] Failed to process the job '18': an exception occurred. Retry attempt 3 of 10 will be performed in 00:00:37.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:19:27.477 +08:00 [Warning] Failed to process the job '22': an exception occurred. Retry attempt 2 of 10 will be performed in 00:00:38.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:19:30.457 +08:00 [Warning] Failed to process the job '26': an exception occurred. Retry attempt 1 of 10 will be performed in 00:00:32.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:19:31.977 +08:00 [Warning] Failed to process the job '27': an exception occurred. Retry attempt 1 of 10 will be performed in 00:00:34.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:19:34.291 +08:00 [Warning] Failed to process the job '25': an exception occurred. Retry attempt 1 of 10 will be performed in 00:00:38.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:19:34.831 +08:00 [Warning] Failed to process the job '23': an exception occurred. Retry attempt 2 of 10 will be performed in 00:01:04.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:19:38.406 +08:00 [Warning] Failed to process the job '28': an exception occurred. Retry attempt 1 of 10 will be performed in 00:00:43.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:19:38.435 +08:00 [Warning] Failed to process the job '24': an exception occurred. Retry attempt 2 of 10 will be performed in 00:01:04.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:19:42.347 +08:00 [Warning] Failed to process the job '19': an exception occurred. Retry attempt 3 of 10 will be performed in 00:01:52.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:19:47.757 +08:00 [Warning] Failed to process the job '17': an exception occurred. Retry attempt 3 of 10 will be performed in 00:01:40.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:19:53.853 +08:00 [Information] 17 scheduled job(s) enqueued.
+2019-03-22 23:19:54.231 +08:00 [Warning] Failed to process the job '21': an exception occurred. Retry attempt 3 of 10 will be performed in 00:01:46.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:19:55.812 +08:00 [Warning] Failed to process the job '15': an exception occurred. Retry attempt 4 of 10 will be performed in 00:02:24.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:20:06.522 +08:00 [Warning] Failed to process the job '29': an exception occurred. Retry attempt 1 of 10 will be performed in 00:00:15.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:20:08.643 +08:00 [Warning] Failed to process the job '30': an exception occurred. Retry attempt 1 of 10 will be performed in 00:00:15.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:20:16.163 +08:00 [Warning] Failed to process the job '31': an exception occurred. Retry attempt 1 of 10 will be performed in 00:00:43.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:20:17.028 +08:00 [Warning] Failed to process the job '32': an exception occurred. Retry attempt 1 of 10 will be performed in 00:00:42.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:20:24.243 +08:00 [Warning] Failed to process the job '18': an exception occurred. Retry attempt 4 of 10 will be performed in 00:01:56.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:20:27.412 +08:00 [Warning] Failed to process the job '26': an exception occurred. Retry attempt 2 of 10 will be performed in 00:00:56.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:20:30.713 +08:00 [Warning] Failed to process the job '27': an exception occurred. Retry attempt 2 of 10 will be performed in 00:00:38.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:21:31.493 +08:00 [Information] 1 servers were removed due to timeout
+2019-03-22 23:21:32.492 +08:00 [Warning] Failed to process the job '22': an exception occurred. Retry attempt 3 of 10 will be performed in 00:00:52.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:21:36.163 +08:00 [Warning] Failed to process the job '25': an exception occurred. Retry attempt 2 of 10 will be performed in 00:01:06.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:21:39.569 +08:00 [Warning] Failed to process the job '28': an exception occurred. Retry attempt 2 of 10 will be performed in 00:00:44.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:21:42.057 +08:00 [Warning] Failed to process the job '29': an exception occurred. Retry attempt 2 of 10 will be performed in 00:01:00.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:22:08.816 +08:00 [Information] Welcome to Scheduler.Net!
+2019-03-22 23:22:22.783 +08:00 [Information] Start installing Hangfire SQL objects...
+2019-03-22 23:22:24.556 +08:00 [Information] Hangfire SQL objects installed.
+2019-03-22 23:22:27.227 +08:00 [Information] Starting Hangfire Server
+2019-03-22 23:22:27.249 +08:00 [Information] Using job storage: 'SQL Server: .\SQL2016DEV@Scheduler_NET'
+2019-03-22 23:22:27.254 +08:00 [Information] Using the following options for SQL Server job storage:
+2019-03-22 23:22:27.256 +08:00 [Information]     Queue poll interval: 00:00:15.
+2019-03-22 23:22:27.256 +08:00 [Information] Using the following options for Hangfire Server:
+2019-03-22 23:22:27.256 +08:00 [Information]     Worker count: 20
+2019-03-22 23:22:27.258 +08:00 [Information]     Listening queues: 'default'
+2019-03-22 23:22:27.258 +08:00 [Information]     Shutdown timeout: 00:00:15
+2019-03-22 23:22:27.258 +08:00 [Information]     Schedule polling interval: 00:00:15
+2019-03-22 23:22:42.830 +08:00 [Warning] Failed to process the job '30': an exception occurred. Retry attempt 2 of 10 will be performed in 00:00:56.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:22:44.241 +08:00 [Warning] Failed to process the job '20': an exception occurred. Retry attempt 4 of 10 will be performed in 00:02:44.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:22:42.830 +08:00 [Warning] Failed to process the job '29': an exception occurred. Retry attempt 3 of 10 will be performed in 00:01:37.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:22:56.917 +08:00 [Warning] Failed to process the job '23': an exception occurred. Retry attempt 3 of 10 will be performed in 00:01:07.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:23:25.637 +08:00 [Warning] Failed to process the job '24': an exception occurred. Retry attempt 3 of 10 will be performed in 00:00:58.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:23:34.201 +08:00 [Warning] Failed to process the job '29': an exception occurred. Retry attempt 4 of 10 will be performed in 00:02:40.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:23:34.300 +08:00 [Warning] Failed to process the job '31': an exception occurred. Retry attempt 2 of 10 will be performed in 00:01:04.
+Scheduler.NET.Common.SchedulerNetException: No client connected.
+   at Scheduler.NET.JobManager.Job.JobExecutor.FireClients(Job job, String batchId) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 64
+   at Scheduler.NET.JobManager.Job.JobExecutor.Execute(Job job) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\Job\JobExecutor.cs:line 28
+2019-03-22 23:25:44.694 +08:00 [Information] Welcome to Scheduler.Net!
+2019-03-22 23:25:58.327 +08:00 [Information] Start installing Hangfire SQL objects...
+2019-03-22 23:25:59.450 +08:00 [Information] Hangfire SQL objects installed.
+2019-03-22 23:26:01.385 +08:00 [Information] Starting Hangfire Server
+2019-03-22 23:26:01.407 +08:00 [Information] Using job storage: 'SQL Server: .\SQL2016DEV@Scheduler_NET'
+2019-03-22 23:26:01.410 +08:00 [Information] Using the following options for SQL Server job storage:
+2019-03-22 23:26:01.412 +08:00 [Information]     Queue poll interval: 00:00:15.
+2019-03-22 23:26:01.413 +08:00 [Information] Using the following options for Hangfire Server:
+2019-03-22 23:26:01.413 +08:00 [Information]     Worker count: 20
+2019-03-22 23:26:01.415 +08:00 [Information]     Listening queues: 'default'
+2019-03-22 23:26:01.415 +08:00 [Information]     Shutdown timeout: 00:00:15
+2019-03-22 23:26:01.415 +08:00 [Information]     Schedule polling interval: 00:00:15
+2019-03-22 23:29:08.675 +08:00 [Information] Welcome to Scheduler.Net!
+2019-03-22 23:29:21.815 +08:00 [Information] Start installing Hangfire SQL objects...
+2019-03-22 23:29:23.008 +08:00 [Information] Hangfire SQL objects installed.
+2019-03-22 23:29:24.807 +08:00 [Information] Starting Hangfire Server
+2019-03-22 23:29:24.823 +08:00 [Information] Using job storage: 'SQL Server: .\SQL2016DEV@Scheduler_NET'
+2019-03-22 23:29:24.824 +08:00 [Information] Using the following options for SQL Server job storage:
+2019-03-22 23:29:24.824 +08:00 [Information]     Queue poll interval: 00:00:15.
+2019-03-22 23:29:24.824 +08:00 [Information] Using the following options for Hangfire Server:
+2019-03-22 23:29:24.825 +08:00 [Information]     Worker count: 20
+2019-03-22 23:29:24.825 +08:00 [Information]     Listening queues: 'default'
+2019-03-22 23:29:24.825 +08:00 [Information]     Shutdown timeout: 00:00:15
+2019-03-22 23:29:24.825 +08:00 [Information]     Schedule polling interval: 00:00:15
+2019-03-22 23:33:20.373 +08:00 [Information] Update {"Url":"http://localhost:60001/api/v1.0/task/e8cddb03f7324db7aeda9ff994d2dbd8?action=run","Method":null,"Id":"e8cddb03f7324db7aeda9ff994d2dbd8","Group":null,"Name":"360指数采集","Cron":"* * * * *","Content":null}.
+2019-03-22 23:36:29.408 +08:00 [Information] Update {"Url":"http://localhost:60001/api/v1.0/task/e8cddb03f7324db7aeda9ff994d2dbd8?action=run","Method":null,"Id":"e8cddb03f7324db7aeda9ff994d2dbd8","Group":null,"Name":"360指数采集","Cron":"* * * * *","Content":null}.
+2019-03-22 23:39:25.687 +08:00 [Information] Welcome to Scheduler.Net!
+2019-03-22 23:39:42.433 +08:00 [Information] Start installing Hangfire SQL objects...
+2019-03-22 23:39:44.180 +08:00 [Information] Hangfire SQL objects installed.
+2019-03-22 23:39:46.245 +08:00 [Information] Starting Hangfire Server
+2019-03-22 23:39:46.274 +08:00 [Information] Using job storage: 'SQL Server: .\SQL2016DEV@Scheduler_NET'
+2019-03-22 23:39:46.276 +08:00 [Information] Using the following options for SQL Server job storage:
+2019-03-22 23:39:46.277 +08:00 [Information]     Queue poll interval: 00:00:15.
+2019-03-22 23:39:46.277 +08:00 [Information] Using the following options for Hangfire Server:
+2019-03-22 23:39:46.278 +08:00 [Information]     Worker count: 20
+2019-03-22 23:39:46.278 +08:00 [Information]     Listening queues: 'default'
+2019-03-22 23:39:46.279 +08:00 [Information]     Shutdown timeout: 00:00:15
+2019-03-22 23:39:46.279 +08:00 [Information]     Schedule polling interval: 00:00:15
+2019-03-22 23:45:04.904 +08:00 [Information] Welcome to Scheduler.Net!
+2019-03-22 23:45:06.052 +08:00 [Information] Start installing Hangfire SQL objects...
+2019-03-22 23:45:06.297 +08:00 [Information] Hangfire SQL objects installed.
+2019-03-22 23:45:06.671 +08:00 [Information] Starting Hangfire Server
+2019-03-22 23:45:06.682 +08:00 [Information] Using job storage: 'SQL Server: .\SQL2016DEV@Scheduler_NET'
+2019-03-22 23:45:06.683 +08:00 [Information] Using the following options for SQL Server job storage:
+2019-03-22 23:45:06.683 +08:00 [Information]     Queue poll interval: 00:00:15.
+2019-03-22 23:45:06.683 +08:00 [Information] Using the following options for Hangfire Server:
+2019-03-22 23:45:06.683 +08:00 [Information]     Worker count: 20
+2019-03-22 23:45:06.683 +08:00 [Information]     Listening queues: 'default'
+2019-03-22 23:45:06.684 +08:00 [Information]     Shutdown timeout: 00:00:15
+2019-03-22 23:45:06.684 +08:00 [Information]     Schedule polling interval: 00:00:15
+2019-03-22 23:45:06.957 +08:00 [Information] 1 servers were removed due to timeout
+2019-03-22 23:50:07.896 +08:00 [Information] 1 servers were removed due to timeout
+2019-03-22 23:51:43.876 +08:00 [Information] Create {"Url":"http://localhost:60001/api/v1.0/task/ba5a3798ab5d494e9c785197e8dda5cd?action=run","Method":null,"Id":"ba5a3798ab5d494e9c785197e8dda5cd","Group":null,"Name":"Test","Cron":"* * * * *","Content":null}.
