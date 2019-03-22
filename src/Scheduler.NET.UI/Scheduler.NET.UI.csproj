@@ -5,6 +5,10 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <None Remove="20190322.log" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNetCore.App" />
 		<PackageReference Include="Serilog" Version="2.7.1" />
 		<PackageReference Include="Serilog.AspNetCore" Version="2.1.1" />

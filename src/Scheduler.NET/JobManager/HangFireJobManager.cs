@@ -99,7 +99,7 @@ namespace Scheduler.NET.JobManager
 			using (var conn = _options.CreateConnection())
 			{
 				conn.Execute(
-					"DELETE FROM job WHERE id=@Id", new { Id = id });
+					"DELETE FROM HangFire.job WHERE id=@Id", new { Id = id });
 			}
 			RecurringJob.RemoveIfExists(id);
 		}

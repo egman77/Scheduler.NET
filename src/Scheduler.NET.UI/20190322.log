@@ -10,3 +10,279 @@
 2019-03-22 16:51:24.364 +08:00 [Information]     Listening queues: 'default'
 2019-03-22 16:51:24.364 +08:00 [Information]     Shutdown timeout: 00:00:15
 2019-03-22 16:51:24.364 +08:00 [Information]     Schedule polling interval: 00:00:15
+2019-03-22 16:58:31.457 +08:00 [Information] Hangfire Server stopped.
+2019-03-22 16:58:53.595 +08:00 [Information] Welcome to Scheduler.Net!
+2019-03-22 16:58:55.037 +08:00 [Information] Start installing Hangfire SQL objects...
+2019-03-22 16:58:55.204 +08:00 [Information] Hangfire SQL objects installed.
+2019-03-22 16:58:55.593 +08:00 [Information] Starting Hangfire Server
+2019-03-22 16:58:55.605 +08:00 [Information] Using job storage: 'SQL Server: .\SQL2016DEV@Scheduler.NET'
+2019-03-22 16:58:55.606 +08:00 [Information] Using the following options for SQL Server job storage:
+2019-03-22 16:58:55.606 +08:00 [Information]     Queue poll interval: 00:00:15.
+2019-03-22 16:58:55.606 +08:00 [Information] Using the following options for Hangfire Server:
+2019-03-22 16:58:55.606 +08:00 [Information]     Worker count: 20
+2019-03-22 16:58:55.606 +08:00 [Information]     Listening queues: 'default'
+2019-03-22 16:58:55.606 +08:00 [Information]     Shutdown timeout: 00:00:15
+2019-03-22 16:58:55.606 +08:00 [Information]     Schedule polling interval: 00:00:15
+2019-03-22 16:59:50.038 +08:00 [Information] Hangfire Server stopped.
+2019-03-22 17:56:29.064 +08:00 [Information] Welcome to Scheduler.Net!
+2019-03-22 17:56:30.617 +08:00 [Information] Start installing Hangfire SQL objects...
+2019-03-22 17:56:31.793 +08:00 [Information] Hangfire SQL objects installed.
+2019-03-22 17:56:32.334 +08:00 [Information] Starting Hangfire Server
+2019-03-22 17:56:32.349 +08:00 [Information] Using job storage: 'SQL Server: .\SQL2016DEV@Scheduler.NET'
+2019-03-22 17:56:32.350 +08:00 [Information] Using the following options for SQL Server job storage:
+2019-03-22 17:56:32.350 +08:00 [Information]     Queue poll interval: 00:00:15.
+2019-03-22 17:56:32.350 +08:00 [Information] Using the following options for Hangfire Server:
+2019-03-22 17:56:32.350 +08:00 [Information]     Worker count: 20
+2019-03-22 17:56:32.350 +08:00 [Information]     Listening queues: 'default'
+2019-03-22 17:56:32.350 +08:00 [Information]     Shutdown timeout: 00:00:15
+2019-03-22 17:56:32.351 +08:00 [Information]     Schedule polling interval: 00:00:15
+2019-03-22 17:57:25.350 +08:00 [Information] Ignore job {"Url":"http://localhost:60001/api/v1.0/task/e8cddb03f7324db7aeda9ff994d2dbd8?action=run","Method":null,"Id":"e8cddb03f7324db7aeda9ff994d2dbd8","Group":null,"Name":"360指数采集","Cron":"* * * * *","Content":null}.
+2019-03-22 17:57:25.355 +08:00 [Information] Delete e8cddb03f7324db7aeda9ff994d2dbd8.
+2019-03-22 17:57:25.457 +08:00 [Error] System.Data.SqlClient.SqlException (0x80131904): 对象名 'job' 无效。
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader)
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command)
+   at Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Scheduler.NET.JobManager.HangFireJobManager`2.Delete(String id) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\HangFireJobManager.cs:line 101
+   at Scheduler.NET.Controllers.BaseController`1.Update(T value) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\Controllers\BaseController.cs:line 68
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ClientConnectionId:777fd133-7309-47aa-a9f6-d75bbd549f8b
+Error Number:208,State:1,Class:16
+2019-03-22 18:05:28.713 +08:00 [Information] Ignore job {"Url":"http://localhost:60001/api/v1.0/task/e8cddb03f7324db7aeda9ff994d2dbd8?action=run","Method":null,"Id":"e8cddb03f7324db7aeda9ff994d2dbd8","Group":null,"Name":"360指数采集","Cron":"* * * * *","Content":null}.
+2019-03-22 18:05:28.714 +08:00 [Information] Delete e8cddb03f7324db7aeda9ff994d2dbd8.
+2019-03-22 18:05:28.718 +08:00 [Error] System.Data.SqlClient.SqlException (0x80131904): 对象名 'job' 无效。
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader)
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command)
+   at Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Scheduler.NET.JobManager.HangFireJobManager`2.Delete(String id) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\HangFireJobManager.cs:line 101
+   at Scheduler.NET.Controllers.BaseController`1.Update(T value) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\Controllers\BaseController.cs:line 68
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ClientConnectionId:777fd133-7309-47aa-a9f6-d75bbd549f8b
+Error Number:208,State:1,Class:16
+2019-03-22 18:08:10.623 +08:00 [Information] Ignore job {"Url":"http://localhost:60001/api/v1.0/task/e8cddb03f7324db7aeda9ff994d2dbd8?action=run","Method":null,"Id":"e8cddb03f7324db7aeda9ff994d2dbd8","Group":null,"Name":"360指数采集","Cron":"* * * * *","Content":null}.
+2019-03-22 18:08:10.623 +08:00 [Information] Delete e8cddb03f7324db7aeda9ff994d2dbd8.
+2019-03-22 18:08:10.628 +08:00 [Error] System.Data.SqlClient.SqlException (0x80131904): 对象名 'job' 无效。
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader)
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command)
+   at Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Scheduler.NET.JobManager.HangFireJobManager`2.Delete(String id) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\HangFireJobManager.cs:line 101
+   at Scheduler.NET.Controllers.BaseController`1.Update(T value) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\Controllers\BaseController.cs:line 68
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ClientConnectionId:1d54cddd-79de-42bf-a98c-c5aaf78d2666
+Error Number:208,State:1,Class:16
+2019-03-22 18:13:53.792 +08:00 [Information] Welcome to Scheduler.Net!
+2019-03-22 18:14:26.978 +08:00 [Information] Start installing Hangfire SQL objects...
+2019-03-22 18:14:29.866 +08:00 [Information] Hangfire SQL objects installed.
+2019-03-22 18:14:33.847 +08:00 [Information] Starting Hangfire Server
+2019-03-22 18:14:33.892 +08:00 [Information] Using job storage: 'SQL Server: .\SQL2016DEV@Scheduler.NET'
+2019-03-22 18:14:33.894 +08:00 [Information] Using the following options for SQL Server job storage:
+2019-03-22 18:14:33.895 +08:00 [Information]     Queue poll interval: 00:00:15.
+2019-03-22 18:14:33.895 +08:00 [Information] Using the following options for Hangfire Server:
+2019-03-22 18:14:33.895 +08:00 [Information]     Worker count: 20
+2019-03-22 18:14:33.896 +08:00 [Information]     Listening queues: 'default'
+2019-03-22 18:14:33.896 +08:00 [Information]     Shutdown timeout: 00:00:15
+2019-03-22 18:14:33.896 +08:00 [Information]     Schedule polling interval: 00:00:15
+2019-03-22 18:15:28.934 +08:00 [Information] Ignore job {"Url":"http://localhost:60001/api/v1.0/task/e8cddb03f7324db7aeda9ff994d2dbd8?action=run","Method":null,"Id":"e8cddb03f7324db7aeda9ff994d2dbd8","Group":null,"Name":"360指数采集","Cron":"* * * * *","Content":null}.
+2019-03-22 18:16:16.289 +08:00 [Information] Delete e8cddb03f7324db7aeda9ff994d2dbd8.
+2019-03-22 20:12:39.888 +08:00 [Information] Welcome to Scheduler.Net!
+2019-03-22 20:12:41.477 +08:00 [Information] Start installing Hangfire SQL objects...
+2019-03-22 20:12:41.875 +08:00 [Information] Hangfire SQL objects installed.
+2019-03-22 20:12:42.323 +08:00 [Information] Starting Hangfire Server
+2019-03-22 20:12:42.337 +08:00 [Information] Using job storage: 'SQL Server: .\SQL2016DEV@Scheduler_NET'
+2019-03-22 20:12:42.338 +08:00 [Information] Using the following options for SQL Server job storage:
+2019-03-22 20:12:42.338 +08:00 [Information]     Queue poll interval: 00:00:15.
+2019-03-22 20:12:42.338 +08:00 [Information] Using the following options for Hangfire Server:
+2019-03-22 20:12:42.338 +08:00 [Information]     Worker count: 20
+2019-03-22 20:12:42.339 +08:00 [Information]     Listening queues: 'default'
+2019-03-22 20:12:42.339 +08:00 [Information]     Shutdown timeout: 00:00:15
+2019-03-22 20:12:42.339 +08:00 [Information]     Schedule polling interval: 00:00:15
+2019-03-22 21:42:57.538 +08:00 [Information] Ignore job {"Url":"http://localhost:60001/api/v1.0/task/e8cddb03f7324db7aeda9ff994d2dbd8?action=run","Method":null,"Id":"e8cddb03f7324db7aeda9ff994d2dbd8","Group":null,"Name":"360指数采集","Cron":"* * * * *","Content":null}.
+2019-03-22 21:42:57.544 +08:00 [Information] Delete e8cddb03f7324db7aeda9ff994d2dbd8.
+2019-03-22 21:42:57.669 +08:00 [Error] System.Data.SqlClient.SqlException (0x80131904): 在将 nvarchar 值 'e8cddb03f7324db7aeda9ff994d2dbd8' 转换成数据类型 int 时失败。
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader)
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command)
+   at Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Scheduler.NET.JobManager.HangFireJobManager`2.Delete(String id) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\HangFireJobManager.cs:line 101
+   at Scheduler.NET.Controllers.BaseController`1.Update(T value) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\Controllers\BaseController.cs:line 68
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ClientConnectionId:e274900c-aaa1-4f14-9880-fd9d320be738
+Error Number:245,State:1,Class:16
+2019-03-22 21:51:50.396 +08:00 [Information] Ignore job {"Url":"http://localhost:60001/api/v1.0/task/e8cddb03f7324db7aeda9ff994d2dbd8?action=run","Method":null,"Id":"e8cddb03f7324db7aeda9ff994d2dbd8","Group":null,"Name":"360指数采集","Cron":"* * * * *","Content":null}.
+2019-03-22 21:51:50.396 +08:00 [Information] Delete e8cddb03f7324db7aeda9ff994d2dbd8.
+2019-03-22 21:51:50.417 +08:00 [Error] System.Data.SqlClient.SqlException (0x80131904): 在将 nvarchar 值 'e8cddb03f7324db7aeda9ff994d2dbd8' 转换成数据类型 int 时失败。
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader)
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command)
+   at Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Scheduler.NET.JobManager.HangFireJobManager`2.Delete(String id) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\HangFireJobManager.cs:line 101
+   at Scheduler.NET.Controllers.BaseController`1.Update(T value) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\Controllers\BaseController.cs:line 68
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ClientConnectionId:331155b4-aa72-4ff7-a63b-84c4b374a5c9
+Error Number:245,State:1,Class:16
+2019-03-22 21:53:23.304 +08:00 [Information] Ignore job {"Url":"http://localhost:60001/api/v1.0/task/e8cddb03f7324db7aeda9ff994d2dbd8?action=run","Method":null,"Id":"e8cddb03f7324db7aeda9ff994d2dbd8","Group":null,"Name":"360指数采集","Cron":"* * * * *","Content":null}.
+2019-03-22 21:53:23.305 +08:00 [Information] Delete e8cddb03f7324db7aeda9ff994d2dbd8.
+2019-03-22 21:53:23.324 +08:00 [Error] System.Data.SqlClient.SqlException (0x80131904): 在将 nvarchar 值 'e8cddb03f7324db7aeda9ff994d2dbd8' 转换成数据类型 int 时失败。
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader)
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command)
+   at Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Scheduler.NET.JobManager.HangFireJobManager`2.Delete(String id) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\HangFireJobManager.cs:line 101
+   at Scheduler.NET.Controllers.BaseController`1.Update(T value) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\Controllers\BaseController.cs:line 68
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ClientConnectionId:20761619-48aa-451d-afab-a0c17e363ae1
+Error Number:245,State:1,Class:16
+2019-03-22 21:56:12.154 +08:00 [Information] Welcome to Scheduler.Net!
+2019-03-22 21:57:00.576 +08:00 [Information] Start installing Hangfire SQL objects...
+2019-03-22 21:57:05.211 +08:00 [Information] Hangfire SQL objects installed.
+2019-03-22 21:57:12.101 +08:00 [Information] Starting Hangfire Server
+2019-03-22 21:57:12.118 +08:00 [Information] Using job storage: 'SQL Server: .\SQL2016DEV@Scheduler_NET'
+2019-03-22 21:57:12.133 +08:00 [Information] Using the following options for SQL Server job storage:
+2019-03-22 21:57:12.134 +08:00 [Information]     Queue poll interval: 00:00:15.
+2019-03-22 21:57:12.134 +08:00 [Information] Using the following options for Hangfire Server:
+2019-03-22 21:57:12.134 +08:00 [Information]     Worker count: 20
+2019-03-22 21:57:12.134 +08:00 [Information]     Listening queues: 'default'
+2019-03-22 21:57:12.135 +08:00 [Information]     Shutdown timeout: 00:00:15
+2019-03-22 21:57:12.135 +08:00 [Information]     Schedule polling interval: 00:00:15
+2019-03-22 21:58:57.395 +08:00 [Information] Ignore job {"Url":"http://localhost:60001/api/v1.0/task/e8cddb03f7324db7aeda9ff994d2dbd8?action=run","Method":null,"Id":"e8cddb03f7324db7aeda9ff994d2dbd8","Group":null,"Name":"360指数采集","Cron":"* * * * *","Content":null}.
+2019-03-22 21:59:04.120 +08:00 [Information] Delete e8cddb03f7324db7aeda9ff994d2dbd8.
+2019-03-22 22:02:29.386 +08:00 [Information] Welcome to Scheduler.Net!
+2019-03-22 22:02:30.711 +08:00 [Information] Start installing Hangfire SQL objects...
+2019-03-22 22:02:31.810 +08:00 [Information] Hangfire SQL objects installed.
+2019-03-22 22:02:32.419 +08:00 [Information] Starting Hangfire Server
+2019-03-22 22:02:32.437 +08:00 [Information] Using job storage: 'SQL Server: .\SQL2016DEV@Scheduler_NET'
+2019-03-22 22:02:32.444 +08:00 [Information] Using the following options for SQL Server job storage:
+2019-03-22 22:02:32.444 +08:00 [Information]     Queue poll interval: 00:00:15.
+2019-03-22 22:02:32.444 +08:00 [Information] Using the following options for Hangfire Server:
+2019-03-22 22:02:32.445 +08:00 [Information]     Worker count: 20
+2019-03-22 22:02:32.447 +08:00 [Information]     Listening queues: 'default'
+2019-03-22 22:02:32.447 +08:00 [Information]     Shutdown timeout: 00:00:15
+2019-03-22 22:02:32.447 +08:00 [Information]     Schedule polling interval: 00:00:15
+2019-03-22 22:02:32.798 +08:00 [Information] 1 servers were removed due to timeout
+2019-03-22 22:02:34.182 +08:00 [Information] Ignore job {"Url":"http://localhost:60001/api/v1.0/task/e8cddb03f7324db7aeda9ff994d2dbd8?action=run","Method":null,"Id":"e8cddb03f7324db7aeda9ff994d2dbd8","Group":null,"Name":"360指数采集","Cron":"* * * * *","Content":null}.
+2019-03-22 22:02:34.187 +08:00 [Information] Delete e8cddb03f7324db7aeda9ff994d2dbd8.
+2019-03-22 22:02:34.364 +08:00 [Error] System.Data.SqlClient.SqlException (0x80131904): 在将 nvarchar 值 'e8cddb03f7324db7aeda9ff994d2dbd8' 转换成数据类型 int 时失败。
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader)
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command)
+   at Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Scheduler.NET.JobManager.HangFireJobManager`2.Delete(String id) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\JobManager\HangFireJobManager.cs:line 101
+   at Scheduler.NET.Controllers.BaseController`1.Update(T value) in E:\hdh_github_workspaces\Scheduler.NET\src\Scheduler.NET\Controllers\BaseController.cs:line 68
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ClientConnectionId:6e422ef6-acdc-449f-bcc2-9f211791c5d7
+Error Number:245,State:1,Class:16
+2019-03-22 22:07:32.802 +08:00 [Information] 1 servers were removed due to timeout

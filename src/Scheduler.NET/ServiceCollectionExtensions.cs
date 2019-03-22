@@ -82,7 +82,11 @@ namespace Scheduler.NET
 					}
 				case StorageType.SqlServer:
 					{
-						GlobalConfiguration.Configuration.UseStorage(new SqlServerStorage(options.Hangfire.ConnectionString));
+                        var sssOptions = new SqlServerStorageOptions()
+                        {
+                            SchemaName = options.Hangfire.SchemaName
+                        };
+						GlobalConfiguration.Configuration.UseStorage(new SqlServerStorage(options.Hangfire.ConnectionString, sssOptions));
 						break;
 					}
 				case StorageType.Redis:
@@ -96,7 +100,7 @@ namespace Scheduler.NET
 						break;
 					}
 			}
-
+            //创建计划数据库
 			InitSchedulerNetDatabase(options);
 			return builder;
 		}

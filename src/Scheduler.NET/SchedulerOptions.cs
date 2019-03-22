@@ -4,8 +4,16 @@ namespace Scheduler.NET
 {
 	public class HangfirefireOptions
 	{
+        /// <summary>
+        /// 数据库类型
+        /// </summary>
 		public StorageType StorageType { get; set; }
 		public string ConnectionString { get; set; }
+
+        /// <summary>
+        /// 架构名
+        /// </summary>
+        public string SchemaName { get; set; } = "dbo";
 	}
 
 	public class CacheOptions
