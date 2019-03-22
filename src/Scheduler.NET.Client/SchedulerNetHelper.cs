@@ -149,6 +149,11 @@ namespace Scheduler.NET.Client
 			CheckResult(response);
 		}
 
+        /// <summary>
+        /// 检查结果是否正确
+        /// </summary>
+        /// <param name="response"></param>
+        /// <returns></returns>
 		private string CheckResult(HttpResponseMessage response)
 		{
 			response.EnsureSuccessStatusCode();
